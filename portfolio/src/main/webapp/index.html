@@ -2,18 +2,122 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
     <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
-  </body>
+  
+  <div id = "index">
+    <body>
+      <header class="header">
+        <nav class="navbar">
+          <a href="#index" class="nav-name">Sara Wu</a>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#index" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+        </nav>
+      </header>
+
+      <!-- <div class = "content"> -->
+        <!-- ITNRODUCTION -->
+        <section class = "intro">
+          <div class = "padding">
+            <div id="title">
+              Hi, I'm Sara!
+            </div>
+            <div id="subtitle">
+              An aspiring software engineer passionate about 
+              designing and creating for others.
+            </div>
+            <br>
+            <img src="images/linkedin.png" height="40" width="40">
+            <img src="images/github.png" height="40" width="40">
+            <img src="images/email.png" height="40" width="40">
+          </div>
+        </section>
+  </div>
+
+        <!-- ABOUT ME -->
+        <div id = "about">
+          <section class = "aboutme">
+            <div class = "padding">
+              <div id="title">
+                About Me
+              </div>
+              <!-- ADD AN IMAGE OF MYSELF  -->
+              <div class="row">
+                <div class="image">
+                  <img src = "https://www.bu.edu/cas/files/2022/04/square.jpeg" hspace="100" align="left" height="150" length="150">
+                </div>
+                <div class = "aboutcontent">
+                  <br><br><br><br>
+                  <div id = "subtext">
+                    I am a rising junior studying at Binghamton University majoring in 
+                    Computer Science and minoring in Graphic Design. 
+                    sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    ut labore et dolore magna aliqua. Ut enim ad minim 
+                    exercitation ullamco laboris nisi ut aliquip ex ea c
+                    aute irure dolor in reprehenderit in voluptate velit e
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- PROJECTS -->
+        <div id = "projects">
+          <section class = "projects">
+            <div class = "padding">
+              <div id="title">
+                Projects
+              </div>
+              <div class="row">
+                <div class="image">
+                  <a href="https://github.com/dlum1cs/hackathon2022">
+                    <img src="images/MACA.png" hspace="100" align="left" height="150" length="150">
+                  </a>
+                  <div id = "text">
+                    My Adorable Cat Assistant
+                  </div>
+                </div>
+                <div class="image">
+                  <img src = "https://www.bu.edu/cas/files/2022/04/square.jpeg" hspace="100" align="left" height="150" length="150">
+                  <div id = "text">
+                    Portfolio Website
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- CONTACT -->
+        <div id = "contact">
+          <section class = "contact">
+            <div class = "padding">
+              <div id="title">
+                Contact
+              </div>
+            </div>
+          </section>
+        </div>
+        
+        
+      <!-- </div> -->
+    </body>
+</head>
 </html>
