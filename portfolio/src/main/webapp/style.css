@@ -9,45 +9,18 @@
 
 html {
   background-color: #fff9fa;
-  position: relative;
+  font-family: 'Poppins', sans-serif;
+  color: #a97684;
   font-size: 16px;
-  position: relative; 
-  margin: 0;
-  padding: 0;
+  font-weight: 500;
+  text-align: center;
+  height: fit-content;
+  width: fit-content;
+  position: relative;
   overflow: auto;
 }
 
-body {
-  height: fit-content;
-}
-
-/* .content {
-  margin: 10rem 4rem 40px 4rem;
-} */
-
-.intro{
-  font-family: 'Poppins', sans-serif;
-  background-color: #fff9fa;
-}
-
-.intro .padding {
-  width: 100%;
-  text-align: left;
-  margin: 10rem 4rem 40px 4rem;
-  padding-right: 25%;
-  padding-left: 25%;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.aboutme {
-  font-family: 'Poppins', sans-serif;
-  background-color: #ffffff;
-}
-
-.aboutme .padding {
-  width: 100%;
-  text-align: center;
+.padding {
   margin: 10rem 4rem 40px 4rem;
   padding-right: 50px;
   padding-left: 50px;
@@ -55,7 +28,7 @@ body {
   padding-bottom: 100px;
 }
 
-.aboutme .row {
+.row {
   display: flex;
   flex-direction: row;
   gap: 2rem;
@@ -63,11 +36,9 @@ body {
   padding-right: 2rem;
   padding-left: 2rem;
 }
-.aboutme .row .image {
-  text-align: center;
+
+.image img{
   flex: 1 1 35rem;
-}
-.aboutme .row .image img {
   margin: 4rem;
   width: 25rem;
   height: auto;
@@ -75,100 +46,69 @@ body {
   box-shadow: 0 5px 10px #b48893;
 }
 
-.aboutme .row .aboutcontent {
+.content {
   flex: 1 1 30rem;
   padding: 2rem;
   text-align: left;
 }
 
-.projects {
-  font-family: 'Poppins', sans-serif;
-  background-color: #fff9fa;
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-.projects .padding {
-  width: 100%;
-  text-align: center;
-  padding-left: 50px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.projects .row {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  flex-wrap: wrap;
-  padding-left: 9rem;
-  padding-right: 5rem;
-}
-.projects .row .image {
-  text-align: center;
-  /* flex: 2 2 35rem; */
-}
-.projects .row .image img {
-  margin: 4rem 4rem 1.5rem 4rem;
-  width: 23rem;
-  height: auto;
-  border-radius: 5%;
-  box-shadow: 0 5px 10px #b48893;
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #fbacbc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.contact {
-  font-family: 'Poppins', sans-serif;
-  background-color: #ffffff;
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #a97684;
 }
 
-.contact .padding {
-  width: 100%;
-  text-align: center;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+/* Add a background color and some padding around the form */
+.container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff9fa;
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 50%;
+  margin-right: 100px;
 }
 
 #title {
-  color: #a97684;
   font-size: 3.5rem;
-  font-weight: 500;
 }
 #subtitle {
   color: #b48893;
   font-size: 2rem;
-  font-weight: 500;
 }
 
 #text {
-  color: #a97684;
   font-size: 1.75rem;
-  font-weight: 500;
 }
 
 #subtext {
   color: #b48893;
   font-size: 1.25rem;
-  font-weight: 500;
 }
 
 /* FOOTER  */
 .footer {
-  position: relative; 
   bottom: 0;
   left: 0;
-  width: 100%;
-  background: #fff0f3;
-  text-align: center;
 }
-
-/* will delete this later after figuring out the css */
-/* .row {
-  display: flex;
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-} */
