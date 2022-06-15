@@ -8,116 +8,172 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
     <script src="script.js"></script>
+    <div id = "index">
+  </head>
   
-  <div id = "index">
-    <body>
-      <header class="header">
-        <nav class="navbar">
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div align = "left">
           <a href="#index" class="nav-name">Sara Wu</a>
-            <ul class="nav-menu">
-              <li class="nav-item">
-                <a href="#index" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#projects" class="nav-link">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact</a>
-              </li>
-            </ul>
-        </nav>
-      </header>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#index" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <!-- <div class = "content"> -->
-        <!-- ITNRODUCTION -->
-        <section class = "intro">
-          <div class = "padding">
+    <!-- INTRODUCTION -->
+    <div class = "padding" style= "
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 0; 
+        padding-right: 0;"
+    >
+        <div class = "row" style = "
+            padding-left: 0rem;"
+        >
+        <div class = "content" style = "
+            flex: none;
+            padding-left: 10%;"
+        >
             <div id="title">
-              Hi, I'm Sara!
-            </div>
-            <div id="subtitle">
-              An aspiring software engineer passionate about 
-              designing and creating for others.
-            </div>
-            <br>
-            <img src="images/linkedin.png" height="40" width="40">
-            <img src="images/github.png" height="40" width="40">
-            <img src="images/email.png" height="40" width="40">
+                Hi, I'm Sara!
+              </div>
+              <div id="subtitle">
+                An aspiring software engineer 
+                <br>passionate about designing and 
+                <br>creating for others.
+              </div>
+              <br>
+              <img src="images/linkedin.png" height="40" width="40">
+              <img src="images/github.png" height="40" width="40">
+              <img src="images/email.png" height="40" width="40">
+        </div>
+        <div class = "image">
+            <img src = "https://www.bu.edu/cas/files/2022/04/square.jpeg" hspace="100" align="left" height="150" length="150" style = "
+                width: 23rem;
+                margin-top: 1rem;
+                box-shadow: none"
+            >
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT ME -->
+    <div id = "about" style = "
+      background-color: #ffffff;"
+    >
+      <div class = "padding">
+        <div id="title">
+          About Me
+        </div>
+        <!-- ADD AN IMAGE OF MYSELF  -->
+        <div class="row">
+          <div class = "image">
+            <img src = "https://www.bu.edu/cas/files/2022/04/square.jpeg" hspace="100" align="left" height="150" length="150">
           </div>
-        </section>
-  </div>
-
-        <!-- ABOUT ME -->
-        <div id = "about">
-          <section class = "aboutme">
-            <div class = "padding">
-              <div id="title">
-                About Me
-              </div>
-              <!-- ADD AN IMAGE OF MYSELF  -->
-              <div class="row">
-                <div class="image">
-                  <img src = "https://www.bu.edu/cas/files/2022/04/square.jpeg" hspace="100" align="left" height="150" length="150">
-                </div>
-                <div class = "aboutcontent">
-                  <br><br><br><br>
-                  <div id = "subtext">
-                    I am a rising junior studying at Binghamton University majoring in 
-                    Computer Science and minoring in Graphic Design. 
-                    sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    ut labore et dolore magna aliqua. Ut enim ad minim 
-                    exercitation ullamco laboris nisi ut aliquip ex ea c
-                    aute irure dolor in reprehenderit in voluptate velit e
-                  </div>
-                </div>
-              </div>
+          <div class = "content">
+            <br><br><br><br>
+            <div id = "subtext">
+              I am a rising junior studying at Binghamton University majoring in 
+              Computer Science and minoring in Graphic Design. 
+              sit amet, consectetur adipiscing elit, sed do eiusmod 
+              ut labore et dolore magna aliqua. Ut enim ad minim 
+              exercitation ullamco laboris nisi ut aliquip ex ea c
+              aute irure dolor in reprehenderit in voluptate velit e
             </div>
-          </section>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <!-- PROJECTS -->
-        <div id = "projects">
-          <section class = "projects">
-            <div class = "padding">
-              <div id="title">
-                Projects
-              </div>
-              <div class="row">
-                <div class="image">
-                  <a href="https://github.com/dlum1cs/hackathon2022">
-                    <img src="images/MACA.png" hspace="100" align="left" height="150" length="150">
-                  </a>
-                  <div id = "text">
-                    My Adorable Cat Assistant
-                  </div>
-                </div>
-                <div class="image">
-                  <img src = "https://www.bu.edu/cas/files/2022/04/square.jpeg" hspace="100" align="left" height="150" length="150">
-                  <div id = "text">
-                    Portfolio Website
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+    <!-- PROJECTS -->
+    <div id = "projects">
+      <div class = "padding" style = "
+        margin: 0 0 0 0;
+        padding-right: 0;"
+      >
+        <div id="title">
+          Projects
         </div>
-
-        <!-- CONTACT -->
-        <div id = "contact">
-          <section class = "contact">
-            <div class = "padding">
-              <div id="title">
-                Contact
-              </div>
+        <div class="row" style = "
+          padding-left: 9rem;
+          padding-right: 5rem;"
+        >
+          <div class = "image">
+            <a href="https://github.com/dlum1cs/hackathon2022">
+              <img src="images/MACA.png" hspace="100" align="left" height="150" length="150" style = "
+                margin: 4rem 4rem 1.5rem 4rem;
+                width: 23rem;
+                cursor: pointer;"
+              >
+            </a>
+            <div id = "text">
+              My Adorable Cat Assistant
             </div>
-          </section>
+          </div>
+          <div class = "image">
+            <img src = "https://www.bu.edu/cas/files/2022/04/square.jpeg" hspace="100" align="left" height="150" length="150" style = "
+              margin: 4rem 4rem 1.5rem 4rem;
+              width: 23rem;
+              cursor: pointer;"
+            >
+            <div id = "text">
+              Portfolio Website
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id = "contact" style = "
+      background-color: #ffffff;"
+    >
+      <div class = "padding" style = "
+        margin: 0 0 0 0;"
+      >
+        <div id = "title">
+          Contact Me!
         </div>
         
+        <div class = "row">
+            <div class = "image">
+                <img src = "https://www.bu.edu/cas/files/2022/04/square.jpeg" hspace="100" align="left" height="150" length="150" style = "
+                    width: 23rem;
+                    box-shadow: none"
+                >
+            </div>
+            <div class="container">
+                <form action="/form-handler" method="POST" onsubmit="formSubmitted()">
+                    <input type="text" name="name-input" placeholder="Name">
+                    <input type="text" name="email-input" placeholder="Email">
+                    <textarea name="message-input" placeholder="Message" style="height:200px"></textarea>
+                    <input type="submit">
+                    <div id = "submit-message"></div>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
         
-      <!-- </div> -->
-    </body>
-</head>
+  </body>
+    
+  <!-- <footer>
+    
+    <br><br><br><br><br><br><br><br><br><br><br>
+  </footer> -->
+  
 </html>
