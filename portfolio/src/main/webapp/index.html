@@ -35,26 +35,39 @@
     </header>
 
     <!-- INTRODUCTION -->
-    <div style = "
-      text-align: left;
-      padding-left: 25%;
-      padding-right: 25%;"
-    >
-      <div class = "padding" style= "
+    <div class = "padding" style= "
+        padding-top: 50px;
+        padding-bottom: 50px;
         padding-left: 0; 
         padding-right: 0;"
-      >
-        <div id="title">
-          Hi, I'm Sara!
+    >
+        <div class = "row" style = "
+            padding-left: 0rem;"
+        >
+        <div class = "content" style = "
+            flex: none;
+            padding-left: 10%;"
+        >
+            <div id="title">
+                Hi, I'm Sara!
+              </div>
+              <div id="subtitle">
+                An aspiring software engineer 
+                <br>passionate about designing and 
+                <br>creating for others.
+              </div>
+              <br>
+              <img src="images/linkedin.png" height="40" width="40">
+              <img src="images/github.png" height="40" width="40">
+              <img src="images/email.png" height="40" width="40">
         </div>
-        <div id="subtitle">
-          An aspiring software engineer passionate about 
-          designing and creating for others.
+        <div class = "image">
+            <img src = "https://www.bu.edu/cas/files/2022/04/square.jpeg" hspace="100" align="left" height="150" length="150" style = "
+                width: 23rem;
+                margin-top: 1rem;
+                box-shadow: none"
+            >
         </div>
-        <br>
-        <img src="images/linkedin.png" height="40" width="40">
-        <img src="images/github.png" height="40" width="40">
-        <img src="images/email.png" height="40" width="40">
       </div>
     </div>
 
@@ -132,25 +145,35 @@
       <div class = "padding" style = "
         margin: 0 0 0 0;"
       >
-        <div id="title">
+        <div id = "title">
           Contact Me!
         </div>
-        <div class="container">
-          <form action="action_page.php">
-            <input type="text" id="fname" name="name" placeholder="Name">
-            <input type="text" id="lname" name="email" placeholder="Email">
-            <textarea id="subject" name="message" placeholder="Message" style="height:200px"></textarea>
-            <input type="submit" value="Submit">
-          </form>
+        
+        <div class = "row">
+            <div class = "image">
+                <img src = "https://www.bu.edu/cas/files/2022/04/square.jpeg" hspace="100" align="left" height="150" length="150" style = "
+                    width: 23rem;
+                    box-shadow: none"
+                >
+            </div>
+            <div class="container">
+                <form action="/form-handler" method="POST" onsubmit="formSubmitted()">
+                    <input type="text" name="name-input" placeholder="Name">
+                    <input type="text" name="email-input" placeholder="Email">
+                    <textarea name="message-input" placeholder="Message" style="height:200px"></textarea>
+                    <input type="submit">
+                    <div id = "submit-message"></div>
+                </form>
+            </div>
         </div>
       </div>
     </div>
         
-        
   </body>
     
-  <footer>
+  <!-- <footer>
+    
     <br><br><br><br><br><br><br><br><br><br><br>
-  </footer>
+  </footer> -->
   
 </html>
