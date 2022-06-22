@@ -8,7 +8,6 @@
 }
 
 html {
-  background-color: #fff9fa;
   font-family: 'Poppins', sans-serif;
   color: #a97684;
   font-size: 16px;
@@ -20,44 +19,66 @@ html {
   overflow: auto;
 }
 
-.padding {
-  margin: 10rem 4rem 40px 4rem;
-  padding-right: 50px;
+section {
   padding-left: 50px;
+  padding-right: 50px;
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: #fff9fa;
+}
+
+section:nth-child(2n+1) {
+  background-color: #ffffff;
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  /* gap: 2rem; */
   flex-wrap: wrap;
-  padding-right: 2rem;
-  padding-left: 2rem;
 }
 
-.image img{
+.column {
   flex: 1 1 35rem;
+  
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+}
+
+.large-image {
   margin: 4rem;
-  width: 25rem;
+  width: 23rem;
   height: auto;
   border-radius: 5%;
   box-shadow: 0 5px 10px #b48893;
 }
 
+.without-shadow {
+  box-shadow: none;
+}
+
+/* TEXT WITHIN ROWS */
 .content {
   flex: 1 1 30rem;
   padding: 2rem;
   text-align: left;
 }
 
+.on-left {
+  flex: none;
+  padding-left: 10%;
+}
+
+/* CONTACT FORM */
 input[type=text], select, textarea {
-  width: 100%; 
-  font-family: 'Poppins', sans-serif;
+  width: 100%;
   padding: 12px; 
   border: 1px solid #ccc; 
   border-radius: 4px; 
+  box-sizing: border-box; 
   margin-top: 6px; 
   margin-bottom: 16px; 
   resize: vertical 
@@ -66,7 +87,6 @@ input[type=text], select, textarea {
 input[type=submit] {
   background-color: #fbacbc;
   color: white;
-  font-family: 'Poppins', sans-serif;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -83,27 +103,33 @@ input[type=submit]:hover {
   background-color: #fff9fa;
   padding: 20px;
   margin-top: 50px;
+  margin-right: 100px;
+  width: 50%;
 }
 
-#title {
+.title {
   font-size: 3.5rem;
 }
-#subtitle {
+.subtitle {
   color: #b48893;
   font-size: 2rem;
 }
 
-#text {
+.text {
   font-size: 1.75rem;
 }
 
-#subtext {
+.subtext {
   color: #b48893;
   font-size: 1.25rem;
 }
 
 /* FOOTER  */
 .footer {
+  position: relative; 
   bottom: 0;
   left: 0;
+  width: 100%;
+  background: #fff0f3;
+  text-align: center;
 }
